@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project4pg1</title>
+    <style>
+        body{
+            width: 1366px;
+            height: 849px;
+            background: #3D087B 0% 0% no-repeat padding-box;
+        }
+        .clock{
+           
+            background: transparent url(./clock_logo.png) 0% 0% no-repeat padding-box;
+            opacity: 1;
+            width: 204px;
+            height: 77px;
+            position: absolute;
+            top: 34px;
+            left: 124px;
+
+        }
+        .time{
+        width: 536px;
+        height: 130px;
+        position: absolute;
+        top: 42px;
+        left: 706px;
+        background: white 0% 0% no-repeat padding-box;
+        border: 1px solid white;
+        border-radius: 10px;
+        display: flex;
+            flex:1;
+            flex-flow:column wrap;
+            justify-content: center;
+            align-items: center;
+           
+           margin: 10px;
+        }
+        .tim{
+            
+color: #3D087B;
+text-align: left;
+font: normal normal 600 20px/32px Manrope;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+            align-items: center;
+   background-color: white;
+        }
+       .tm{
+        top: 62px;
+left: 823px;
+width: 80px;
+height: 90px;
+opacity: 1;
+text-align: center;
+align-items: center;
+       }
+       .hr{
+        background: transparent url(./timeline.png) 0% 0% no-repeat padding-box;
+       }
+       .min{
+        background: transparent url(./timeline.png) 0% 0% no-repeat padding-box;
+       }
+       .sec{
+        background: transparent url(./timeline.png) 0% 0% no-repeat padding-box;
+       }
+       .am{
+        background: transparent url(./AM_svg.svg) 0% 0% no-repeat padding-box;
+       }
+       .tms{
+            width: 0px;
+            color: #3D087B;
+            text-align: left;
+            font: normal normal 600 20px/32px Manrope;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+       }
+       .tback1{
+        position: absolute;
+        top: 62px;
+left: 766px;
+width: 416px;
+height: 130px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 0.71;
+z-index: -1;      
+       }
+       .tback2{
+        position: absolute;
+        top: 72px;
+left: 785px;
+width: 379px;
+height: 130px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 0.22;
+z-index: -2;      
+       }
+       .tsetover{
+        display: flex;
+            flex:1;
+            flex-flow:column wrap;
+        position: absolute;
+        top: 149px;
+left: 124px;
+width: 566px;
+height: 363px;
+border: 1px solid var(--unnamed-color-ededed);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EDEDED;
+border-radius: 10px;
+opacity: 1;
+       }
+       .dotime{
+       
+            display: flex;
+            flex:1;
+            flex-flow:row wrap;
+            justify-content:left;
+            align-items: center;
+            color: white;
+         border:white solid 1px;
+           margin: 10px;
+           padding: 10px;
+          
+          
+       }
+      
+       .line{
+position: absolute;
+top: 220px;
+left: 165px;
+height: 40px;
+border-left: 3px solid black;
+opacity: .5;
+
+       }
+       .lunch{
+        width: 500px;
+       }
+      .cl1{
+        width: auto;
+        height: 35px;
+        
+        color: #3D087B;
+      }
+      .cls1{
+        width: 35px;
+        height: 35px;
+        background-image:url(./wake_up.svg);
+        background-size: cover;
+      }
+      .cls11{
+        width: 35px;
+        height: 35px;
+        background-image:url(./lunch_time.svg);
+        background-size: cover;
+      }
+      
+      .cls12{
+        width: 35px;
+        height: 35px;
+        background-image:url(./nap_time\ \(1\).svg);
+        background-size: cover;
+      }
+      .cls13{
+        width: 35px;
+        height: 35px;
+        background-image:url(./nap_time\ \(1\).svg);
+        background-size: cover;
+      }
+      select{
+        position: absolute;
+        right: 40px;
+        width: 250px;
+        height: 30PX;
+      }
+      .cls2{
+        margin-left: 20px;
+      }
+      .set{
+        display: flex;
+            flex:1;
+            flex-flow:column wrap;            
+width: 566px;
+height: 363px;
+border: 1px solid var(--unnamed-color-ededed);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EDEDED;
+border-radius: 10px;
+opacity: 1;
+      }
+      .grab{
+        position: absolute;
+        top: 212px;
+left: 706px;
+width: 536px;
+height: 118px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EDEDED;
+border-radius: 10px;
+opacity: 1;
+text-align: left;
+display: flex;
+align-items: center;
+color: #8E53F0;
+font: normal normal 900 28px/40px Bauhaus Hv BT;
+      }
+      .img{
+        position: absolute;
+        top: 345px;
+left: 707px;
+width: 536px;
+height: 341px;
+background: transparent url(./Component\ 30\ –\ 1.svg) 0% 0% no-repeat padding-box;
+opacity: 1;
+      }
+      .good{
+        position: absolute;
+        top: 527px;
+left: 124px;
+width: 566px;
+height: 77px;
+border: 1px solid var(--unnamed-color-ededed);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EDEDED;
+border-radius: 10px;
+opacity: 0.23;
+display: flex;
+        align-items: center;
+      }
+      .go{
+        position: absolute;
+        top: 549px;
+        left: 149px;
+        opacity:1;
+      
+        text-align: left;
+font: normal normal 900 27px/34px Bauhaus Hv BT;
+letter-spacing: 0px;
+color: white;
+text-transform: uppercase;
+opacity: 1;
+      }
+      .setalarm{
+        position: absolute;
+        top: 624px;
+left: 124px;
+width: 299px;
+height: 50px;
+background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+border-radius: 4px;
+opacity: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+      }
+      .setalarm:hover{
+        background: transparent linear-gradient(113deg, #FC5EFF 0%, #F1A7C5 40%, #6E54EC 81%, #CB52F8 100%) 0% 0% no-repeat padding-box;
+      }
+      .wack{
+        position: absolute;
+        top: 615px;
+left: 437px;
+width: 253px;
+height: 117px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EDEDED;
+border-radius: 10px;
+opacity: 0.23;
+display: flex;
+align-items: center;
+      }
+      .wackin{
+        position: absolute;
+        top: 625px;
+left: 449px;
+width: 200px;
+height: 94px;
+text-align: left;
+font: normal normal bold 12px/25px Manrope;
+letter-spacing: 0px;
+color: #F25CFE;
+opacity: 1;
+      }
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+    <div class="clock"></div>
+    <div class="time">
+        
+        <div class="tm tim">TIME</div>
+        <div class="tm hr"></div> <div class="tms tm" >:</div>
+        <div class="tm min"></div><div class="tms tm" >:</div>
+        <div class="tm sec"></div><div class="tms tm" >:</div>
+        <div class="tm am"></div>
+    </div>
+    <div class="tback1"></div>
+    <div class="tback2"></div>
+    <div class="grab">GRAB SOME HEALTHY BREAKFAST!!!</div>
+    <div class="img"></div>
+   
+    <div class="tsetover">
+     <div class="set">
+        <div class="dotime icons" >
+            <div class="cl1 cls1"></div>
+            
+            <div class="cl1 cls2">Set wake up time</div>
+            <div class="cl1 cls3"><select>
+                <option value="0">8AM-9AM</option>
+                <option value="1">9AM-10AM</option>
+                <option value="2" selected>10AM-11AM</option>
+                <option value="3">11AM-12AM</option>
+            </select></div></div>
+            <div class="dotime icons" >
+                <div class="cl1 cls11"></div>
+                <div class="cl1 cls2">Set lunch time</div>
+                <div class="cl1 cls3"><select>
+                    <option value="0">8AM-9AM</option>
+                    <option value="1">9AM-10AM</option>
+                    <option value="2" >10AM-11AM</option>
+                    <option value="3"selected>11AM-12AM</option>
+                </select></div></div>
+               <div class="dotime icons" >
+                <div class="cl1 cls12"></div>
+                <div class="cl1 cls2">Set nap time</div>
+                <div class="cl1 cls3"><select>
+                    <option value="0">8AM-9AM</option>
+                    <option value="1">9AM-10AM</option>
+                    <option value="2" selected>10AM-11AM</option>
+                    <option value="3">11AM-12AM</option>
+                </select></div>
+                
+          </div>  
+          <div class="dotime icons" >
+            <div class="cl1 cls13"></div>
+            <div class="cl1 cls2">Set night time</div>
+            <div class="cl1 cls3"><select>
+                <option value="0">8AM-9AM</option>
+                <option value="1">9AM-10AM</option>
+                <option value="2" selected>10AM-11AM</option>
+                <option value="3">11AM-12AM</option>
+            </select></div>
+        </div>    
+       
+    </div></div>
+    <div class="line"></div> 
+    <div class="line" style="position: absolute; top: 310px;"></div>
+    <div class="line" style="position: absolute; top: 400px;"></div>
+    <div class="good"></div>
+    <div class="go">GOOD MORNING!! WAKE UP !!</div> 
+    <div class="setalarm">Set Alarm</div>
+    <div class="wack"></div> <div class="wackin"> Wake Up Time : 10AM - 11AM<br>
+         Lunch Time : 12PM - 1PM<br> 
+         Nap Time : 4PM - 5PM<br> 
+         Night Time : 8PM-9AM</div>
+</body>
+</html>
