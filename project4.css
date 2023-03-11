@@ -16,7 +16,7 @@
     border-radius: 20px;
     box-sizing: border-box;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
     width: 1366px;
@@ -56,6 +56,7 @@ display: flex;
 color: #3D087B;
 text-align: left;
 font: normal normal 600 20px/32px Manrope;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 text-transform: uppercase;
 display: flex;
 justify-content: center;
@@ -93,6 +94,7 @@ background: transparent url(./AM_svg.svg) 0% 0% no-repeat padding-box;
     color: #3D087B;
     text-align: left;
     font: normal normal 600 20px/32px Manrope;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -230,6 +232,7 @@ display: flex;
 align-items: center;
 color: #8E53F0;
 font: normal normal 900 28px/40px Bauhaus Hv BT;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 img{
     position: absolute;
@@ -262,6 +265,7 @@ opacity:1;
 
 text-align: left;
 font: normal normal 900 32px/34px Bauhaus Hv BT;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 letter-spacing: 0px;
 color: white;
 text-transform: uppercase;
@@ -305,6 +309,7 @@ width: 200px;
 height: 94px;
 text-align: left;
 font: normal normal bold 12px/25px Manrope;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 letter-spacing: 0px;
 color: #F25CFE;
 opacity: 1;
@@ -610,8 +615,10 @@ color: #F25CFE;
 opacity: 1;
 }
     .cards{
-        width: 85%;
+        width: 100px;
         height: 700px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
     }
     .clock{
    background: transparent url(./clock_logo.png) 0% 0% no-repeat padding-box;
@@ -726,6 +733,7 @@ left: 2px;
 opacity:1;
 text-align: left;
 font: normal normal 800 20px/34px Bauhaus Hv BT;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 letter-spacing: 0px;
 color: white;
 text-transform: uppercase;
@@ -735,12 +743,11 @@ text-transform: uppercase;
 .setalarm{
 position: relative;
 top: 485px;
-left: 40px;
-width: 79px;
-height: 30px;
+left: 0px;
+width: 299px;
+height: 60px;
 background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
 border-radius: 4px;
-
 opacity: 1;
 display: flex;
 align-items: center;
@@ -751,11 +758,11 @@ color: white;
 background: transparent linear-gradient(113deg, #FC5EFF 0%, #F1A7C5 40%, #6E54EC 81%, #CB52F8 100%) 0% 0% no-repeat padding-box;
 }
 .wack{
-position: absolute;
-top: 560px;
-left: 125px;
-width: 175px;
-height: 100px;
+    position: relative;
+top: 500px;
+left: 0px;
+width: 299px;
+height: 120px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EDEDED;
 border-radius: 10px;
@@ -764,13 +771,14 @@ display: flex;
 align-items: center;
 }
 .wackin{
-position: absolute;
-top: 560px;
-left: 135px;
-width: 175px;
-height: 100px;
+    position: relative;
+    top: 390px;
+    left: 10px;
+    width: 299px;
+    height: 120px;
 text-align: left;
 font: normal normal bold 12px/25px Manrope;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 letter-spacing: 0px;
 color: #F25CFE;
 opacity: 1;
@@ -779,8 +787,8 @@ opacity: 1;
 width: 300px;
 height: 130px;
 position: absolute;
-top: 720px;
-left: 35px;
+top: 810px;
+left: 23px;
 background: white 0% 0% no-repeat padding-box;
 border: 1px solid white;
 border-radius: 10px;
@@ -789,7 +797,8 @@ display: flex;
     flex-flow:column wrap;
     justify-content: center;
     align-items: center;
-   margin: 10px;
+   margin: 12px;
+   
 }
 .tim{
     
@@ -842,8 +851,8 @@ background: transparent url(./AM_svg.svg) 0% 0% no-repeat padding-box;
 }
 .tback1{
 position: absolute;
-top: 725px;
-left: 65px;
+top: 830px;
+left: 53px;
 width: 260px;
 height: 130px;
 background: #FFFFFF  0% 0% no-repeat padding-box;
@@ -853,8 +862,8 @@ opacity: 0.71;
 }
 .tback2{
 position: absolute;
-top: 740px;
-left: 80px;
+top: 837px;
+left: 68px;
 width: 230px;
 height: 130px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -864,8 +873,8 @@ opacity: 0.22;
 }
 .grab{
 position: absolute;
-top: 882px;
-left:45px;
+top: 990px;
+left: 32px;
 width: 300px;
 height: 88px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -876,24 +885,17 @@ text-align: left;
 display: flex;
 align-items: center;
 color: #8E53F0;
-font: normal normal 900 16px/40px Bauhaus Hv BT;
+font: normal normal 900 16px/40px Bauhaus Hv BT bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.img{
-position: absolute;
-top: 1000px;
-left: 45px;
-width: 300px;
-height:400px;
-background: transparent url(./Component\ 30\ –\ 1.svg) 0% 0% no-repeat padding-box;
-opacity: 1;
-}
+
 img{
     position: absolute;
-      top: 920px;
-left: 45px;
+      top: 1020px;
+left: 32px;
 width: 300px;
   }
 }
 .big{
-font-size: 35px;
+font-size: 30px;
 }
