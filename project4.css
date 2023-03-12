@@ -227,7 +227,7 @@ background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EDEDED;
 border-radius: 10px;
 opacity: 1;
-text-align: left;
+text-align: center;
 display: flex;
 align-items: center;
 color: #8E53F0;
@@ -286,6 +286,7 @@ justify-content: center;
 color: white;
 }
 .setalarm:hover{
+    
 background: transparent linear-gradient(113deg, #FC5EFF 0%, #F1A7C5 40%, #6E54EC 81%, #CB52F8 100%) 0% 0% no-repeat padding-box;
 }
 .wack{
@@ -324,8 +325,10 @@ opacity: 1;
 
 @media only screen and (max-width:460px){
   body{
+    margin: 0px;
+    padding: 0px;
     width: 350px;
-    height: 849px;
+    height: 2000px;
     background: #3D087B 0% 0% no-repeat padding-box;
 }
 .clock{
@@ -614,6 +617,26 @@ letter-spacing: 0px;
 color: #F25CFE;
 opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .cards{
         width: 100px;
         height: 700px;
@@ -788,7 +811,8 @@ width: 300px;
 height: 130px;
 position: absolute;
 top: 810px;
-left: 23px;
+left: 10px;
+right: 10px;
 background: white 0% 0% no-repeat padding-box;
 border: 1px solid white;
 border-radius: 10px;
@@ -808,7 +832,7 @@ display: flex;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-                align-items: center;
+    align-items: center;
        background-color: white;
             }
 .tm{
@@ -874,27 +898,29 @@ opacity: 0.22;
 .grab{
 position: absolute;
 top: 990px;
-left: 32px;
+left: 25px;
 width: 300px;
 height: 88px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EDEDED;
 border-radius: 10px;
 opacity: 1;
-text-align: left;
-display: flex;
+text-align: center;
 align-items: center;
 color: #8E53F0;
-font: normal normal 900 16px/40px Bauhaus Hv BT bold;
+font-size: 20px;
+font-weight:bolder;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img{
     position: absolute;
-      top: 1020px;
-left: 32px;
+      top: 1100px;
+left: 25px;
 width: 300px;
+height: 200px;
   }
+
 }
 .big{
 font-size: 30px;
