@@ -7,6 +7,7 @@
     <title>project4</title>
     <link rel="icon" type="image/x-icon" href="https://priyarajp.github.io/HTMLFILESEA21/PR%20LOGO%20.jpg" />
     <link rel="stylesheet" href="./project4.css">
+    
 </head>
 <body>
     <div class="cg4">
@@ -138,9 +139,24 @@
               
            </div></div>
            <div class="good">     </div>
-            <div class="go">GOOD MORNING!! WAKE UP !!</div> 
-       
-            <div class="setalarm">Set Alarm</div>
+            <div class="go" id="gm"></div> 
+            <div class="setalarm"  onmousemove="myFunction(event)" onmouseout="clearCoor()"><p id="demo">Set Alarm</p></div>
+           
+
+            <script>
+            function myFunction(e) {
+              let coor = "Party time!";
+              document.getElementById("demo").innerHTML = coor;
+            }
+            
+            function clearCoor() {
+            let coor = "Set Alarm";
+              document.getElementById("demo").innerHTML = coor;
+            }
+            
+            </script>
+
+            <script></script>
             <div class="wack"></div>
              <div class="wackin"> 
                 Wake Up Time : 10AM - 11AM<br>
@@ -156,29 +172,104 @@
             
                 <div class="tm tim">TIME</div>
                 <div class="tm hr">
-                 <div class="big">10</div>
+                 <div class="big" id="hour"></div>
+                 <script>
+                     let d=new Date();
+                     let h = d.getHours()%12||12;
+                     document.getElementById("hour").innerHTML=h;
+                 </script>
                  <div class="small">hours</div>
                 </div> <div class="tms tm" >:</div>
                 <div class="tm min">
-                  <div class="big">10</div>
+                  <div class="big" id="mins"></div>
                  <div class="small">mins</div>
+                 <script>
+                    let m = d.getMinutes();
+                    document.getElementById("mins").innerHTML=m;
+                </script>
                 </div><div class="tms tm" >:</div>
                 <div class="tm sec">
-                  <div class="big">10</div>
-                  <div class="small">secs</div>
+                  <div class="big" id="secs"></div>
+                  <div class="small" >secs</div>
+                  <script>
+                    let s = d.getSeconds();
+                    document.getElementById("secs").innerHTML=s;
+                </script>
                 </div>
-                <div class="tms tm" >:</div>
-                <div class="tm am">
-                  AM
-    
+                <div class="tms tm"  >:</div>
+                <div class="tm am" id="ampm">
                 </div>
+                <script>
+                   let gms;
+                     let hou = d.getHours();
+                      if(hou<12){
+                      gms="AM";
+                            }
+                            else{
+                                gms="PM";
+                            }
+                            document.getElementById("ampm").innerHTML= gms;
+                </script>
             </div>
-                   <div class="grab">GRAB SOME HEALTHY BREAKFAST!!!</div>
-                   <img src="./Component 30 – 1.svg"  >
+                   <div class="grab" id="grabs">GRAB SOME HEALTHY BREAKFAST!!!</div>
+                  
+                   <script >
+                   let gm;
+                   let grabs;
+                    if(hou<=9){
+                        gm="GOOD NIGHT !!";
+                        grabs="GRAB SOME HEALTHY BREAKFAST!!!";
+                    }
+                    else if (hou<=11){
+                        gm="GOOD MORNING!! WAKE UP !!";
+                        grabs="LET'S HAVE SOME LUNCH !! ";
+                    }
+                    else if (hou<=13){
+                        gm="GOOD AFTERNOON !! TAKE SOME SLEEP";
+                        grabs=" ";
+                    }
+                    else if (hou<=17){
+                        gm="GOOD EVENING !!";
+                        grabs="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING! ";
+                    }
+                    else{
+                        {
+                        gm="GOOD NIGHT !!";
+                        grabs=" CLOSE YOUR EYES AND GO TO SLEEP";
+                        
+                    }
+                    }
+                    document.getElementById("gm").innerHTML=gm;
+                    document.getElementById("grabs").innerHTML=grabs;
+                   
+                </script>
+<img id="myImage"  onclick="changeImage()" src="https://priyarajp.github.io/project4/Component%2030%20%E2%80%93%201.svg" width="100" height="180">
+
+
+
+<script>
+    let image = document.getElementById("myImage");
    
-       
+    let don=new Date();
+        let hs = don.getHours(); 
+      
+  if (hs<=9) {
+    image.src = "https://priyarajp.github.io/project4/Group%205194@2x.png";
+  }else if (hs<=11) {
+    image.src = "https://priyarajp.github.io/project4/Component%2030%20%E2%80%93%201.svg";
+  }
+  else if (hs<=13){
+    image.src = "https://priyarajp.github.io/project4/Group%205183@2x.png";
+  }
+  else if (hs<=17){
+    image.src = "https://priyarajp.github.io/project4/lunch_imageof_tea.png";
+  }
+  else{
+    image.src = "https://priyarajp.github.io/project4/Group%205194@2x.png";
+  }
+
+</script>
         </div></div>
-        <div class="cg4"></div>
-    
+        
 </body>
 </html>
