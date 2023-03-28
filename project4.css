@@ -147,17 +147,18 @@ opacity: 1;
     align-items: center;
     color: white;
  border:white solid 1px;
-   margin: 10px;
-   padding: 10px;
+   margin-left: 20px;
+   padding: 0px;
   
   
 }
 
 .line{
-position: absolute;
-top: 220px;
-left: 165px;
+position: relative;
+top: 0px;
+left: 35px;
 height: 40px;
+margin-left: 0px;
 border-left: 3px solid black;
 opacity: .5;
 
@@ -264,7 +265,7 @@ width: 600px;
 opacity:1;
 
 text-align: left;
-font: normal normal 900 32px/34px Bauhaus Hv BT;
+font: normal normal 900 20px/34px Bauhaus Hv BT;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 letter-spacing: 0px;
 color: white;
@@ -453,8 +454,8 @@ opacity: 1;
     align-items: center;
     color: white;
  border:white solid 1px;
-   margin: 10px;
-   padding: 10px;
+   margin: 0px;
+   padding: 0px;
   
   
 }
@@ -520,7 +521,7 @@ height: 363px;
 border: 1px solid var(--unnamed-color-ededed);
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EDEDED;
-border-radius: 10px;
+
 opacity: 1;
 }
 .grab{
@@ -663,6 +664,7 @@ background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EDEDED;
 border-radius: 10px;
 opacity: 1;
+
 }
 .tsetover{
 display: flex;
@@ -678,6 +680,7 @@ background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EDEDED;
 border-radius: 10px;
 opacity: 1;
+
 }
 .dotime{
 
@@ -688,15 +691,14 @@ opacity: 1;
     align-items: center;
     color: white;
  border:white solid 1px;
-   margin: 10px;
-   padding: 10px;
+   margin: 0px;
+   padding: 0px;
   
   
 }
 .cl1{
 width: auto;
 height: 35px;
-
 color: #3D087B;
 }
 .cls1{
@@ -755,7 +757,7 @@ width: 300px;
 left: 2px;
 opacity:1;
 text-align: left;
-font: normal normal 800 20px/34px Bauhaus Hv BT;
+font: normal normal 800 18px/34px Bauhaus Hv BT;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 letter-spacing: 0px;
 color: white;
