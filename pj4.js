@@ -121,7 +121,7 @@ function cl() {
     document.getElementById("grabes").innerHTML=grabes;
        image.src = "https://priyarajp.github.io/project4/Component%2030%20%E2%80%93%201.svg";
       }
-      else if(hs === aft.value){
+      else if(hs == aft.value){
         gmas="GOOD AFTERNOON !! TAKE SOME SLEEP";
           grabes="LET'S HAVE SOME LUNCH !!";
           // document.getElementById("gmas").innerHTML=gmas;
