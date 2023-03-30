@@ -19,8 +19,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    width: 1366px;
-    height: 849px;
+    width:0px;
+    height:0px;
     background: #3D087B 0% 0% no-repeat padding-box;
 }
 .clock{
@@ -64,8 +64,7 @@ justify-content: center;
 background-color: white;
 }
 .tm{
-top: 62px;
-left: 823px;
+
 width: 80px;
 height: 90px;
 opacity: 1;
@@ -671,7 +670,7 @@ display: flex;
     flex:1;
     flex-flow:column wrap;
 position: absolute;
-top: 99px;
+top: 260px;
 left: 0px;
 width: 300px;
 height: 363px;
@@ -767,7 +766,7 @@ text-transform: uppercase;
 }
 .setalarm{
 position: relative;
-top: 485px;
+top: 560px;
 left: 0px;
 width: 299px;
 height: 60px;
@@ -784,7 +783,7 @@ background: transparent linear-gradient(113deg, #FC5EFF 0%, #F1A7C5 40%, #6E54EC
 }
 .wack{
     position: relative;
-top: 480px;
+top: 550px;
 left: 0px;
 width: 299px;
 height: 120px;
@@ -797,7 +796,7 @@ align-items: center;
 }
 .wackin{
     position: relative;
-    top: 370px;
+    top: 440px;
     left: 10px;
     width: 299px;
     height: 120px;
@@ -812,7 +811,7 @@ opacity: 1;
 width: 300px;
 height: 130px;
 position: absolute;
-top: 810px;
+top: 130px;
 left: 10px;
 right: 10px;
 background: white 0% 0% no-repeat padding-box;
@@ -877,29 +876,30 @@ background: transparent url(./AM_svg.svg) 0% 0% no-repeat padding-box;
 }
 .tback1{
 position: absolute;
-top: 830px;
-left: 53px;
+top: 154px;
+left: 45px;
 width: 260px;
 height: 130px;
 background: #FFFFFF  0% 0% no-repeat padding-box;
 border-radius: 10px;
 opacity: 0.71;
+z-index: 0;
 
 }
 .tback2{
 position: absolute;
-top: 837px;
-left: 68px;
+top: 162px;
+left: 60px;
 width: 230px;
 height: 130px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border-radius: 10px;
 opacity: 0.22;
-
+z-index: 3;
 }
 .grab{
 position: absolute;
-top: 990px;
+top: 890px;
 left: 25px;
 width: 300px;
 height: 88px;
@@ -917,7 +917,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 img{
     position: absolute;
-      top: 1100px;
+      top: 1000px;
 left: 25px;
 width: 300px;
 height: 200px;
