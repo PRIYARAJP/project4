@@ -736,7 +736,7 @@ margin:5px;
 }
 .good{
 position: relative;
-top: 477px;
+top: 710px;
 left: 0px;
 width: 300px;
 height: 77px;
@@ -748,10 +748,11 @@ opacity: 0.23;
 display: flex;
 font: normal normal 800 20px/34px Bauhaus Hv BT;
 align-items: center;
+z-index: 1;
 }
 .go{
 position: absolute;
-top: 490px;
+top: 720px;
 width: 300px;
 left: 2px;
 opacity:1;
@@ -761,7 +762,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 letter-spacing: 0px;
 color: white;
 text-transform: uppercase;
-
+z-index: 1;
 
 }
 .setalarm{
@@ -783,7 +784,7 @@ background: transparent linear-gradient(113deg, #FC5EFF 0%, #F1A7C5 40%, #6E54EC
 }
 .wack{
     position: relative;
-top: 550px;
+top: 640px;
 left: 0px;
 width: 299px;
 height: 120px;
@@ -796,7 +797,7 @@ align-items: center;
 }
 .wackin{
     position: relative;
-    top: 440px;
+    top: 530px;
     left: 10px;
     width: 299px;
     height: 120px;
@@ -895,11 +896,11 @@ height: 130px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border-radius: 10px;
 opacity: 0.22;
-z-index: 3;
+z-index: 0;
 }
 .grab{
 position: absolute;
-top: 890px;
+top: 990px;
 left: 25px;
 width: 300px;
 height: 88px;
@@ -917,7 +918,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 img{
     position: absolute;
-      top: 1000px;
+      top: 1100px;
 left: 25px;
 width: 300px;
 height: 200px;
