@@ -40,7 +40,7 @@ function myFunction() {
                    let gm;
                    let grabs;
                  
-                    if (hr<=9){
+                    if (hr<=6){
                         gm="GOOD NIGHT !!";
                         grabs="CLOSE YOUR EYES AND GO TO SLEEP";
                     }
@@ -63,8 +63,8 @@ function myFunction() {
                         
                     }
                     }
-                    document.getElementById("gm").innerHTML=gm;
-                    // document.getElementById("grabs").innerHTML=grabs;
+                      // document.getElementById("gm").innerHTML=gm;
+                     document.getElementById("grabs").innerHTML=grabs;
 
 
  let image = document.getElementById("myImage");
@@ -113,39 +113,40 @@ function cl() {
 
         let gmas;
   let grabes;
-      
+
       if(hs == r.value){
         gmas="GOOD MORNING!! EYES UP !!";
     grabes="GRAB SOME HEALTHY BREAKFAST!!!";
-    // document.getElementById("gmas").innerHTML=gmas;
-    document.getElementById("grabes").innerHTML=grabes;
+    document.getElementById("gmas").innerHTML=gmas;
+    // document.getElementById("grabes").innerHTML=grabes;
        image.src = "https://priyarajp.github.io/project4/Component%2030%20%E2%80%93%201.svg";
       }
       else if(hs == aft.value){
         gmas="GOOD AFTERNOON !! TAKE SOME SLEEP";
           grabes="LET'S HAVE SOME LUNCH !!";
-          // document.getElementById("gmas").innerHTML=gmas;
-          document.getElementById("grabes").innerHTML=grabes;
+          document.getElementById("gmas").innerHTML=gmas;
+          // document.getElementById("grabes").innerHTML=grabes;
           image.src = "https://priyarajp.github.io/project4/Group%205183@2x.png";
       
       }
+      
       else if(hs == eve.value){
         gmas="GOOD AFTERNOON !! TAKE SOME SLEEP";
     grabes="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-    // document.getElementById("gmas").innerHTML=gmas;
-    document.getElementById("grabes").innerHTML=grabes;
+    document.getElementById("gmas").innerHTML=gmas;
+    // document.getElementById("grabes").innerHTML=grabes;
     image.src = "https://priyarajp.github.io/project4/lunch_imageof_tea.png";
              }
 
       else if (hs == nig.value){
         gmas="GOOD NIGHT !!";
            grabes="CLOSE YOUR EYES AND GO TO SLEEP";
-           // document.getElementById("gmas").innerHTML=gmas;
-           document.getElementById("grabes").innerHTML=grabes;
+           document.getElementById("gmas").innerHTML=gmas;
+          //  document.getElementById("grabes").innerHTML=grabes;
            image.src = "https://priyarajp.github.io/project4/Group%205194@2x.png";
              }
             
-}
+ }
 
 
 
@@ -156,33 +157,33 @@ function cl() {
 
 
 
-//// old
-  // let gmas;
-  // let grabes;
+// //// old
+//   // let gmas;
+//   // let grabes;
 
-  //  function no1(){
-  //   gmas="GOOD MORNING!! EYES UP !!";
-  //   grabes="GRAB SOME HEALTHY BREAKFAST!!!";
-  //   // document.getElementById("gmas").innerHTML=gmas;
-  //   document.getElementById("grabes").innerHTML=grabes;
-  //      image.src = "https://priyarajp.github.io/project4/Component%2030%20%E2%80%93%201.svg";
+//   //  function no1(){
+//   //   gmas="GOOD MORNING!! EYES UP !!";
+//   //   grabes="GRAB SOME HEALTHY BREAKFAST!!!";
+//   //   // document.getElementById("gmas").innerHTML=gmas;
+//   //   document.getElementById("grabes").innerHTML=grabes;
+//   //      image.src = "https://priyarajp.github.io/project4/Component%2030%20%E2%80%93%201.svg";
 
-  //  }
-  //  function no2(){
-  //   gmas="GOOD AFTERNOON !! TAKE SOME SLEEP";
-  //   grabes="LET'S HAVE SOME LUNCH !!";
-  //   // document.getElementById("gmas").innerHTML=gmas;
-  //   document.getElementById("grabes").innerHTML=grabes;
-  //   image.src = "https://priyarajp.github.io/project4/Group%205183@2x.png";
+//   //  }
+//   //  function no2(){
+//   //   gmas="GOOD AFTERNOON !! TAKE SOME SLEEP";
+//   //   grabes="LET'S HAVE SOME LUNCH !!";
+//   //   // document.getElementById("gmas").innerHTML=gmas;
+//   //   document.getElementById("grabes").innerHTML=grabes;
+//   //   image.src = "https://priyarajp.github.io/project4/Group%205183@2x.png";
 
-  //  }
+//   //  }
 
-  //  function no3(){
-  //   gmas="GOOD AFTERNOON !! TAKE SOME SLEEP";
-  //   grabes="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-  //   // document.getElementById("gmas").innerHTML=gmas;
-  //   document.getElementById("grabes").innerHTML=grabes;
-  //   image.src = "https://priyarajp.github.io/project4/lunch_imageof_tea.png";
+//   //  function no3(){
+//   //   gmas="GOOD AFTERNOON !! TAKE SOME SLEEP";
+//   //   grabes="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+//   //   // document.getElementById("gmas").innerHTML=gmas;
+//   //   document.getElementById("grabes").innerHTML=grabes;
+//   //   image.src = "https://priyarajp.github.io/project4/lunch_imageof_tea.png";
    
 
   //  }
