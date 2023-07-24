@@ -146,7 +146,6 @@ opacity: 1;
     justify-content:left;
     align-items: center;
     color: white;
- border:white solid 1px;
    margin-left: 20px;
    padding: 0px;
   
@@ -328,10 +327,11 @@ opacity: 1;
   body{
     margin: 0px;
     padding: 0px;
-    width: 350px;
+    width: 400px;
     height: 2000px;
     background: #3D087B 0% 0% no-repeat padding-box;
 }
+
 .clock{
    
     background: transparent url(./clock_logo.png) 0% 0% no-repeat padding-box;
@@ -430,21 +430,7 @@ border-radius: 10px;
 opacity: 0.22;
 z-index: -2;      
 }
-.tsetover{
-display: flex;
-    flex:1;
-    flex-flow:column wrap;
-position: absolute;
-top: 149px;
-left: 124px;
-width: 566px;
-height: 363px;
-border: 1px solid var(--unnamed-color-ededed);
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #EDEDED;
-border-radius: 10px;
-opacity: 1;
-}
+
 .dotime{
 
     display: flex;
@@ -453,7 +439,7 @@ opacity: 1;
     justify-content:left;
     align-items: center;
     color: white;
- border:white solid 1px;
+ /* border:white solid 1px; */
    margin: 0px;
    padding: 0px;
   
@@ -512,18 +498,7 @@ height: 30PX;
 .cls2{
 margin-left: 20px;
 }
-.set{
-display: flex;
-    flex:1;
-    flex-flow:column wrap;            
-width: 566px;
-height: 363px;
-border: 1px solid var(--unnamed-color-ededed);
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #EDEDED;
 
-opacity: 1;
-}
 .grab{
 position: absolute;
 top: 212px;
@@ -654,15 +629,12 @@ opacity: 1;
    margin-top: 10px;
 }
 .set{
-display: flex;
-    flex:1;
-    flex-flow:column wrap;            
+         
 width: 300px;
 height: 363px;
 border: 1px solid var(--unnamed-color-ededed);
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #EDEDED;
-border-radius: 10px;
+
+
 opacity: 1;
 
 }
@@ -671,14 +643,14 @@ display: flex;
     flex:1;
     flex-flow:column wrap;
 position: absolute;
-top: 99px;
+top: 260px;
 left: 0px;
 width: 300px;
 height: 363px;
 border: 1px solid var(--unnamed-color-ededed);
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #EDEDED;
-border-radius: 10px;
+/* background: #FFFFFF 0% 0% no-repeat padding-box; */
+/* border: 1px solid #EDEDED; */
+/* border-radius: 10px; */
 opacity: 1;
 
 }
@@ -690,7 +662,7 @@ opacity: 1;
     justify-content:left;
     align-items: center;
     color: white;
- border:white solid 1px;
+
    margin: 0px;
    padding: 0px;
   
@@ -737,7 +709,7 @@ margin:5px;
 }
 .good{
 position: relative;
-top: 477px;
+top: 637px;
 left: 0px;
 width: 300px;
 height: 77px;
@@ -752,7 +724,7 @@ align-items: center;
 }
 .go{
 position: absolute;
-top: 490px;
+top: 650px;
 width: 300px;
 left: 2px;
 opacity:1;
@@ -767,7 +739,7 @@ text-transform: uppercase;
 }
 .setalarm{
 position: relative;
-top: 485px;
+top: 800px;
 left: 0px;
 width: 299px;
 height: 60px;
@@ -784,9 +756,9 @@ background: transparent linear-gradient(113deg, #FC5EFF 0%, #F1A7C5 40%, #6E54EC
 }
 .wack{
     position: relative;
-top: 500px;
+top: 600px;
 left: 0px;
-width: 299px;
+width: 300px;
 height: 120px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EDEDED;
@@ -797,9 +769,9 @@ align-items: center;
 }
 .wackin{
     position: relative;
-    top: 390px;
+    top: 490px;
     left: 10px;
-    width: 299px;
+    width: 300px;
     height: 120px;
 text-align: left;
 font: normal normal bold 12px/25px Manrope;
@@ -812,9 +784,9 @@ opacity: 1;
 width: 300px;
 height: 130px;
 position: absolute;
-top: 810px;
-left: 10px;
-right: 10px;
+top: 120px;
+left: 35px;
+right: 40px;
 background: white 0% 0% no-repeat padding-box;
 border: 1px solid white;
 border-radius: 10px;
@@ -877,30 +849,32 @@ background: transparent url(./AM_svg.svg) 0% 0% no-repeat padding-box;
 }
 .tback1{
 position: absolute;
-top: 830px;
-left: 53px;
+top: 145px;
+left: 68px;
 width: 260px;
 height: 130px;
-background: #FFFFFF  0% 0% no-repeat padding-box;
+background: white 0% 0% no-repeat padding-box;
 border-radius: 10px;
 opacity: 0.71;
+
+z-index: 0;
 
 }
 .tback2{
 position: absolute;
-top: 837px;
-left: 68px;
+top: 155px;
+left: 82px;
 width: 230px;
 height: 130px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border-radius: 10px;
 opacity: 0.22;
-
+z-index: 0;
 }
 .grab{
 position: absolute;
 top: 990px;
-left: 25px;
+left: 50px;
 width: 300px;
 height: 88px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -918,11 +892,21 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 img{
     position: absolute;
       top: 1100px;
-left: 25px;
+left: 50px;
 width: 300px;
 height: 200px;
   }
+  
+.line{
+    position: relative;
+    top: 0px;
+    left: 15px;
+    height: 40px;
+    margin-left: 0px;
+    border-left: 3px solid black;
+    opacity: .5;
 
+}
 }
 .big{
 font-size: 30px;
